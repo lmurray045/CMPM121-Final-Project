@@ -1,0 +1,27 @@
+[StartingConditions]
+Day = 1
+SunLevel = 5
+WaterLevel = 3
+PlayerSeedChoice = "grass"
+
+[WeatherPolicy]
+SunRange = [3, 10]
+WaterRange = [1, 5]
+
+[VictoryConditions]
+MaturePlantsRequired = 5
+MaximumDays = 20
+
+[Events]
+Day 5:
+    SunRange = [5, 15]
+    WaterRange = [0, 3]
+    Message = "There is a drought! The sun is stronger than ever but water levels are now low."
+Day 10:
+    SunRange = [3, 10]
+    WaterRange = [1, 5]
+    WaterMultiplier = 2
+    Message = "Rainstorm! Water levels now at an all time high."
+Day 15:
+    MaturePlantsRequired = 10
+    Message = "Extra Challenge: You must now grow 10 mature plants instead."

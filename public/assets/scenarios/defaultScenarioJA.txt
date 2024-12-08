@@ -1,0 +1,27 @@
+[StartingConditions]
+Day = 1
+SunLevel = 5
+WaterLevel = 3
+PlayerSeedChoice = "grass"  
+
+[WeatherPolicy]
+SunRange = [3, 10]
+WaterRange = [1, 5]
+
+[VictoryConditions]
+MaturePlantsRequired = 5
+MaximumDays = 20
+
+[Events]
+Day 5:
+    SunRange = [5, 15]
+    WaterRange = [0, 3]
+    Message = "干ばつです！太陽はこれまでになく強くなっていますが、水位は低下しています。"
+Day 10:
+    SunRange = [3, 10]
+    WaterRange = [1, 5]
+    WaterMultiplier = 2
+    Message = "豪雨！水位が過去最高に達しました。"
+Day 15:
+    MaturePlantsRequired = 10
+    Message = "追加の挑戦: これからは10本の成熟した植物を育てなければなりません。"

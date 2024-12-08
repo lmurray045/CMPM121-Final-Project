@@ -1,0 +1,25 @@
+{
+    "controls": "Controls: ARROWS - Move | X - Reap Cell | C - Sow Cell | SPACE - Advance Time | Q - Choose Grass | W - Choose Flower | E - Choose Shrub | Z - Undo | Y - Redo",
+    "alerts": {
+        "lost": "End Condition Not Met: You Lose!",
+        "won": "End Condition Met: You Win!",
+        "saved": "Game Saved to Slot ",
+        "no_save": "No saved data found in slot ",
+        "loaded": "Game Loaded from Slot ",
+        "no_auto": "No autosave detected",
+        "autosave" : "Do you want to load from the autosave? (Click Cancel for to clear the autosave)",
+        "undo": "No actions to undo!",
+        "redo": "No actions to redo!"
+    },
+    "ui": {
+        "day": "Day: ",
+        "sun": "Sun Level: ",
+        "water": "Water Level: ",
+        "seed": "Seed Choice: ",
+        "save_slot": "Save Slot ",
+        "load_slot": "Load Slot ",
+        "grass": "Grass",
+        "flower": "Flower",
+        "shrub": "Shrub"
+    }
+}

@@ -1,0 +1,27 @@
+[StartingConditions]
+Day = 1
+SunLevel = 5
+WaterLevel = 3
+PlayerSeedChoice = "grass"
+
+[WeatherPolicy]
+SunRange = [3, 10]
+WaterRange = [1, 5]
+
+[VictoryConditions]
+MaturePlantsRequired = 5
+MaximumDays = 20
+
+[Events]
+Day 5:
+    SunRange = [5, 15]
+    WaterRange = [0, 3]
+    Message = "هناك جفاف! الشمس أقوى من أي وقت مضى ولكن مستويات الماء منخفضة الآن."
+Day 10:
+    SunRange = [3, 10]
+    WaterRange = [1, 5]
+    WaterMultiplier = 2
+    Message = "عاصفة مطرية! مستويات الماء الآن في أعلى مستوياتها على الإطلاق."
+Day 15:
+    MaturePlantsRequired = 10
+    Message = "تحدي إضافي: يجب عليك الآن زراعة 10 نباتات ناضجة بدلاً من ذلك."
